@@ -3,14 +3,14 @@
 
 ## Erlang Lab Class #2 - Miniproject
 
-**Note that the mini-project is the same for the three modules (Go, Erlang, and Rust).** 
+**Note that the mini-project is the same for the three modules (Go, Rust, Erlang).** 
 
 **DEADLINE** 27/11/2024 23:59
 
-----
+---
 To submit your answers, simply push your files onto the repository. The problem will be graded.
 
-----
+---
 
 ## Product Distribution System
 The goal of this mini-project is to design and implement a concurrent product distribution system using Erlang’s process-based concurrency model. The system will simulate a factory that handles the shipment of products to clients using a fleet of trucks and multiple conveyor belts.
@@ -30,7 +30,6 @@ The goal of this mini-project is to design and implement a concurrent product di
 * Conveyor belts can run continuously.
 * You need not be very realistic or precise with time, but the relative order of events should be the expected one: a package is loaded onto a conveyor belt before it gets loaded onto a non-full truck.
 * The order of events must follow logical steps: a package is created, placed on a conveyor belt, and then loaded onto a non-full truck.
-* Implement the core system.
 
 **Note:** Add a small report to the task 1 folder that explains what correctness properties your system has and what achieves them.
 
