@@ -22,9 +22,8 @@ The goal of this mini-project is to design and implement a concurrent product di
 * Message Passing: Use Erlang’s message-passing mechanisms for synchronization and coordination.
 
 ## Task 1: Core System
-#### Goal: Implement the basic system with continuous operation.
+#### Goal: Implement the core system with continuous operation.
 
-* Implement the core system.
 * Must account for multiple conveyor belts being “fed” packages continuously and multiple trucks.
 * Assume that when a truck is full it can be replaced instantly.
 * Conveyor belts can run continuously.
