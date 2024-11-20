@@ -1,23 +1,26 @@
 # miniproject-erlang
-# CPLT - Actor-based Concurrency Module
+# PCLT - Actor-based Concurrency Module
 
 ## Erlang Lab Class #2 - Miniproject
 
 **Note that the mini-project is the same for the three modules (Go, Erlang, and Rust).** 
 
-**DEADLINE** 29/11/2023 11:59AM
+**DEADLINE** 27/11/2024 23:59
 
 ----
 To submit your answers, simply push your files onto the repository. The problem will be graded.
 
 ----
 
-## Resource Reservation System
-* In a modern office building, a company's employees typically need to book or reserve the use of certain facilities in advance.
-* Companies use automated systems to manage reservations of limited capacity resources in their facilities.
-* The main design constraint for such a system is that reservations must be managed in such a way that no overbooking of a resource is ever allowed.
-* In this mini-project, you will implement three variants of the resource reservation systems, offering slightly different features.
-* Each variation must ensure that **no resource overbooking is possible** and that the system as a whole eventually makes progress.
+## Product Distribution System
+The goal of this mini-project is to design and implement a concurrent product distribution system using Erlang’s process-based concurrency model. The system will simulate a factory that handles the shipment of products to clients using a fleet of trucks and multiple conveyor belts.
+
+### General Requirements
+	* Concurrency: The system must use independent Erlang processes to model conveyor belts and trucks.
+	* Deadlock-Free: Ensure the absence of deadlocks; all packages must eventually be loaded onto trucks.
+	* Progress Guarantee: All parts of the system must keep working to process and deliver packages.
+	* Message Passing: Use Erlang’s message-passing mechanisms for synchronization and coordination.
+
 
 ### Task 1
 * Implement the core resource reservation system.
